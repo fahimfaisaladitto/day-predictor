@@ -1,0 +1,58 @@
+/* --- Custom CSS Variables for Theming --- */
+:root {
+  --bg-body: #f3f4f6; /* gray-100 */
+  --bg-card: #f9fafb;
+  --text-primary: #1f2937; /* gray-800 */
+  --text-secondary: #4b5563; /* gray-600 */
+  --border-card: rgba(255, 255, 255, 0.4);
+  --toggle-bg: #d1d5db; /* gray-300 */
+  --toggle-ball-bg: #f9fafb;
+  --accent-color: #008cff;
+}
+
+html.dark {
+  --bg-body: #111827; /* gray-900 */
+  --bg-card: rgba(31, 41, 55, 0.5); /* gray-800 with alpha */
+  --text-primary: #f9fafb; /* gray-50 */
+  --text-secondary: #d1d5db; /* gray-300 */
+  --border-card: rgba(55, 65, 81, 0.5);
+  --toggle-bg: #374151; /* gray-700 */
+  --toggle-ball-bg: #111827;
+}
+/* --- Applying Variables --- */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-body);
+  transition: background-color 0.3s;
+}
+.main-card {
+  background-color: var(--bg-card);
+  border-color: var(--border-card);
+  color: var(--text-primary);
+}
+.main-card p {
+  color: var(--text-secondary);
+}
+.toggle-bg { background-color: var(--toggle-bg); }
+.toggle-ball { background-color: var(--toggle-ball-bg); }
+.accent-text { color: var(--accent-color); }
+
+/* --- Animations --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Animation for the result appearing */
+.result-enter {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+.result-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+}
