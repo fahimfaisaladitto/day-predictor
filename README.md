@@ -1,8 +1,11 @@
 # Next Day Predictor
 <h4 align="left">A sleek, modern web application that "predicts" the next day of the week based on a user's selection. This project showcases a clean, Glassmorphism-Style UI with a responsive layout, dark mode, and dynamic feedback animations.</h4>
-<h2 align="left">Link: </h2>
+<h2 align="left">Link: https://fahimfaisaladitto.github.io/day-predictor/ </h2>
 
 # Screenshots
+<img width="403" height="819" alt="iPhone-13-PRO-fahimfaisaladitto github io (34)" src="https://github.com/user-attachments/assets/a63bccd9-2d16-41e0-bda7-4f7750c2f3cb" />
+<img width="403" height="819" alt="iPhone-13-PRO-fahimfaisaladitto github io (35)" src="https://github.com/user-attachments/assets/0cfa0681-22af-4440-9e5d-986bc819986d" />
+
 
 # Features
 • Modern "Glassmorphism" UI: A beautiful, blurred background card design that is popular in modern web applications.
